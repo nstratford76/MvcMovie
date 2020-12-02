@@ -23,39 +23,43 @@ namespace MvcMovie.Models
                 context.Movie.AddRange(
                     new Movie
                     {
-                        Title = "When Harry Met Sally",
+                        Title = "Meet The Mormons",
                         ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Genre = "Romantic Comedy",
-                        Rating = "R",
+                        GenreId = 0,
+                        Rating = "G",
                         Price = 7.99M,
+                        ImageUrl = "meetthemormons.jpg"
                         
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters ",
+                        Title = "The RM",
                         ReleaseDate = DateTime.Parse("1984-3-13"),
-                        Genre = "Comedy",
-                        Rating = "R",
-                        Price = 8.99M
+                        GenreId = 1,
+                        Rating = "PG-13",
+                        Price = 8.99M,
+                        ImageUrl = "therm.jpg"
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters 2",
+                        Title = "The Other Side of Heaven",
                         ReleaseDate = DateTime.Parse("1986-2-23"),
-                        Genre = "Comedy",
-                        Rating = "R",
-                        Price = 9.99M
+                        GenreId = 2,
+                        Rating = "PG",
+                        Price = 9.99M,
+                        ImageUrl = "othersideofheaven.jpg"
                     },
 
                     new Movie
                     {
-                        Title = "Rio Bravo",
+                        Title = "The Best Two Years",
                         ReleaseDate = DateTime.Parse("1959-4-15"),
-                        Genre = "Western",
+                        GenreId = 3,
                         Rating = "R",
-                        Price = 3.99M
+                        Price = 3.99M,
+                        ImageUrl = "besttwoyears.jpg"
                     }
                 );
                 context.SaveChanges();

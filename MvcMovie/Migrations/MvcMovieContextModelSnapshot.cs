@@ -21,7 +21,7 @@ namespace MvcMovie.Migrations
 
             modelBuilder.Entity("MvcMovie.Models.Movie", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -41,7 +41,7 @@ namespace MvcMovie.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ID");
 
                     b.ToTable("Movie");
                 });
