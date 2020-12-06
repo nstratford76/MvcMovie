@@ -1,7 +1,9 @@
 ﻿@model MvcMovie.Models.Movie
 
+@***model dynamic*@
+
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Add New Movie";
 }
 
 <h1>Create</h1>
@@ -28,9 +30,16 @@
                 <span asp-validation-for="ReleaseDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Genre" class="control-label"></label>
-                <input asp-for="Genre" class="form-control" />
-                <span asp-validation-for="Genre" class="text-danger"></span>
+                <label asp-for="GenreId" class="control-label"></label>
+                <select asp-for="GenreId" class="form-control" asp-items="@ViewBag.Genres">
+                    <option value="" selected disabled>--Choose--</option>
+                </select>
+                <span asp-validation-for="GenreId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input asp-for="ImageUrl" class="form-control"/>
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>

@@ -25,41 +25,36 @@ namespace MvcMovie.Models
                     {
                         Title = "Meet The Mormons",
                         ReleaseDate = DateTime.Parse("1989-2-12"),
-                        GenreId = 0,
+                        GenreId = 1,
                         Rating = "G",
-                        Price = 7.99M,
-                        ImageUrl = "meetthemormons.jpg"
-                        
+                        Price = 7.99M   
                     },
 
                     new Movie
                     {
                         Title = "The RM",
                         ReleaseDate = DateTime.Parse("1984-3-13"),
-                        GenreId = 1,
+                        GenreId = 2,
                         Rating = "PG-13",
-                        Price = 8.99M,
-                        ImageUrl = "therm.jpg"
+                        Price = 8.99M                
                     },
 
                     new Movie
                     {
                         Title = "The Other Side of Heaven",
                         ReleaseDate = DateTime.Parse("1986-2-23"),
-                        GenreId = 2,
+                        GenreId = 3,
                         Rating = "PG",
-                        Price = 9.99M,
-                        ImageUrl = "othersideofheaven.jpg"
+                        Price = 9.99M                       
                     },
 
                     new Movie
                     {
                         Title = "The Best Two Years",
                         ReleaseDate = DateTime.Parse("1959-4-15"),
-                        GenreId = 3,
+                        GenreId = 4,
                         Rating = "R",
-                        Price = 3.99M,
-                        ImageUrl = "besttwoyears.jpg"
+                        Price = 3.99M
                     }
                 );
                 context.SaveChanges();

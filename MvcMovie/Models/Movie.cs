@@ -14,7 +14,7 @@ namespace MvcMovie.Models
         [Display(Name = "Release Date"), DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
 
-        [RegularExpression(@"^[A-Z]+[a-zA-Z]*$"), Required, StringLength(30)]
+        //[RegularExpression(@"^[A-Z]+[a-zA-Z]*$"), Required, StringLength(30)]
         [Display(Name ="Genre")]
         public int GenreId { get; set; }
 
